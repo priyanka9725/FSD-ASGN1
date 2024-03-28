@@ -1,0 +1,83 @@
+/* Styling the contact form  */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 110px;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px 40px;
+  box-shadow: 10px 5px 10px #9072c7;
+}
+.inputlabel {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 2px solid rgb(252, 251, 251);
+  padding: 10px;
+  color: beige;
+  font-size: 17px;
+  background: none;
+  outline: 0;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 10px;
+  cursor: text;
+  color: white;
+  transition: 0.4s;
+}
+
+button {
+  padding: 10px;
+  color: white;
+  font: bold 15px arial;
+  background-color: rgb(234, 13, 13);
+  border: 1px solid rgb(58, 9, 148);
+  outline: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+input:focus~label,textarea:focus~label{
+  top: -35px;
+  font-size: 14px;
+}
+ input:valid~label{
+  top: -40px;
+  font-size: 14px;
+ }
+ textarea:valid~label{
+  top: -40px;
+ }
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.row .inputlabel{
+  flex-basis: 47%;
+}
+
+h2 {
+  color: goldenrod;
+  font-size: xx-large;
+  text-align: center;
+  padding-bottom: 30px;
+}

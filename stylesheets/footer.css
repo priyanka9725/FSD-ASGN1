@@ -1,0 +1,78 @@
+
+/* footer styles */
+
+footer {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  margin-top: auto;
+  background-color: rgba(63, 58, 73, 0.7);
+  padding: 10px 20px 0 100px;
+  border-top: 1px solid maroon;
+}
+.footer-con {
+  width: 25%;
+}
+.footer-list li {
+  color: white;
+  padding: 5px 0;
+}
+.footer-con h5 {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 550;
+  color: goldenrod;
+}
+
+.footer-con h5::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: -5px;
+  background-color: rgb(160, 2, 2);
+  height: 2px;
+  width: 50px;
+}
+
+.footer-list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.footer-list li a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+
+}
+
+.footer-list li a:hover {
+  color: red;
+  font-size: 18px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0px 8px 8px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.links a:hover {
+font-size: 22px;
+}
+
+.footer-content{
+  color: goldenrod;
+  padding: 10px 0;
+  margin: 20px 0;
+  font-size: 18px;
+}
+@media (max-width: 858px){
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+  }
+}

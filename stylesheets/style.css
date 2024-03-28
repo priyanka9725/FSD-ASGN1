@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: url(../Images/Midnight.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS";
+  font-size: 50px;
+  margin: 70px 0 0 0;
+  text-decoration: underline;
+  color: bisque;
+}
+@media (max-width: 878px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+p {
+  text-align: justify;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+@media (max-width: 878px) {
+  p {
+    font-size: 17px;
+  }
+}
+
+/* for images and home cards */
+
+.image {
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  padding: 10px;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.card {
+  display: inline-block;
+  border: 2px solid rgb(252, 251, 251);
+  margin: 2%;
+}
+
+.cardimage {
+  height: 200px;
+  width: 250px;
+  padding: 10px;
+}
+
+.content {
+  text-align: center;
+  height: 200px;
+  color: white;
+  width: 250px;
+}
+
+
+/* styling navbar */
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(33, 9, 55, 0.88);
+  width: 100vw;
+  border-bottom: 1px solid maroon;
+}
+nav ul {
+  margin: 0;
+  padding: 0 50px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: "Trebuchet MS";
+}
+a.active,
+a:hover {
+  color: red;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.menu {
+  color: white;
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 10px;
+}
+
+.menu:hover {
+  color: red;
+}
+
+#button {
+  display: none;
+}
+
+@media (max-width: 972px) {
+  nav ul li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 858px) {
+  .menu {
+    position: relative;
+    left: -45%;
+  }
+  nav {
+    height: 10vh;
+  }
+  ul {
+    position: fixed;
+    top: 59px;
+    left: -110%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(71, 37, 102);
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a:active {
+    background: none;
+    color: red;
+    transition: 0.3s ease-in-out;
+    font-size: 22px;
+  }
+  #button:checked ~ ul {
+    left: 0;
+  }
+}
+@media (min-width: 950px) {
+  .menu {
+    display: none;
+  }
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Trebuchet MS";
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c0b47;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #69487e;
+  font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(62, 34, 90);
+}
+
+@media (max-width: 858px) {
+  .dropdown {
+    position: fixed;
+    right: 50px;
+  }
+}
+
+/* styling blog posts */
+h3 {
+  display: flex;
+  color: goldenrod;
+  font: bold "Helvetica Neue";
+  font-size: 30px;
+  padding: 15px 10px 5px 10px;
+  margin: 5px 30px;
+  text-decoration: underline;
+}
+.ingredients {
+  color: white;
+  padding: 10px;
+  margin: 0 30px;
+}
+.ingredients li {
+  list-style: circle;
+  font: 20px "Helvetica Neue";
+  padding: 10px;
+  margin: 10px;
+}
+
+ol {
+  color: white;
+  padding: 10px;
+  margin: 30px;
+}
+ol li {
+  list-style: decimal;
+  padding: 10px;
+  margin: 0 20px;
+  font: 20px "Helvetica";
+}
+
+video {
+  padding: 10px;
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 70vw;
+}
+
+.bon {
+  color: rgb(247, 6, 18);
+  margin: 30px;
+  font: bold 25px "san-serif";
+}
+
+@media (max-width: 858px) {
+  h3 {
+    font-size: 25px;
+  }
+  .ingredients li {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+
+  ol li {
+    font-size: 17px;
+  }
+  .bon {
+    font-size: 20px;
+  }
+}
